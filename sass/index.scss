@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  h1 {
+    &:first-of-type {
+      margin-top: 50px;
+    }
+  }
+  .row {
+    border: 1px solid #000;
+    margin-bottom: 50px;
+    [class*="col"] {
+      .item {
+        background-color: #000;
+        color: #fff;
+        padding: 1em;
+        margin: 2px;
+      }
+    }
+  }
+}
